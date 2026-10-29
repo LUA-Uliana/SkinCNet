@@ -60,9 +60,7 @@ Each notebook contains data loading, hair removal with the RemovalHS method, met
 
 Step 2. Train the SkinCNet student model. Open the directory "MNN based on specialized CNN" and execute the notebooks. This stage includes training without knowledge distillation (baseline) and training with knowledge distillation from each teacher model with different temperature values T = 1, 2, 5 and weight parameter values 0.25, 0.5, 0.75.
 
-Step 3. Ablation study. Open the notebook "Ablation Study SkinCNet.ipynb". This notebook contains comparison of 7 convolutional architectures, evaluation of fusion strategies (Concatenation, SE, Cross-Attention, Gated), analysis of metadata encoding methods, and evaluation of hair removal impact.
-
-Step 4. External validation on PAD-UFES-20. The validation uses a stratified 60/20/20 train/validation/test split based on unique patient IDs. Models were fine-tuned for 5 epochs on the training subset before evaluation.
+Step 3. Ablation study. Open the notebook "Ablation Study SkinCNet.ipynb". This notebook contains comparison of 7 convolutional architectures.
 
 ## Hyperparameters
 
@@ -78,11 +76,3 @@ Step 4. External validation on PAD-UFES-20. The validation uses a stratified 60/
 | Knowledge distillation weight | 0.25, 0.5, 0.75 |
 | Input resolution (SkinCNet, DenseNet, ResNeXt) | 224 x 224 |
 | Input resolution (Inception_v4) | 299 x 299 |
-
-## Citation
-
-If you use this code in your research, please cite the corresponding publication in IEEE Transactions on Neural Networks and Learning Systems.
-
-## License
-
-This project is distributed under the MIT License.
