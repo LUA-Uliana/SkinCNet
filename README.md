@@ -18,8 +18,7 @@ This repository contains the official implementation of the study on a compact m
 
 Clone the repository:
 
-    git clone https://github.com/Lyakhova-Uliana/SkinCNet-Compact-Multimodal-Neural-Network-Optimized-via-Knowledge-Distillation-.git
-    cd SkinCNet-Compact-Multimodal-Neural-Network-Optimized-via-Knowledge-Distillation-
+    git clone https://github.com/LUA-Uliana/SkinCNet
 
 Create a Conda environment:
 
@@ -35,10 +34,13 @@ Or install dependencies via pip:
     .
     ├── MNN based on DenseNet_201 as a model teacher.ipynb
     ├── MNN based on DenseNet_201 as a model teacher test/
+    ├── MNN based on DenseNet_201 DKD, DIST and RKD.ipynb
     ├── MNN based on Inception_v4 as a model teacher.ipynb
     ├── MNN based on Inception_v4 as a model teacher test/
+    ├── MNN based on Inception_v4 DKD, DIST and RKD.ipynb
     ├── MNN based on ResNeXt_101 as a model teacher.ipynb
     ├── MNN based on ResNeXt_101 as a model teacher test/
+    ├── MNN based on ResNeXt_101 DKD, DIST and RKD.ipynb
     ├── MNN based on specialized CNN/
     ├── Ablation Study SkinCNet.ipynb
     ├── requirements.txt
