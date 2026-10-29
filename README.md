@@ -4,36 +4,6 @@
 
 This repository contains the official implementation of the study on a compact multimodal neural network SkinCNet optimized via knowledge distillation for pigmented skin lesion classification. The framework jointly processes dermatoscopic images and clinical patient metadata (age group, sex, anatomical localization) and transfers knowledge from heavy teacher architectures (DenseNet_201, ResNeXt_101, Inception_v4) to the lightweight student model SkinCNet.
 
-## Task
-
-Multiclass classification of pigmented skin lesions into 6 diagnostic categories:
-
-| Code | Diagnosis |
-| --- | --- |
-| NEV | Melanocytic nevus |
-| SEK | Seborrheic keratosis |
-| ACK | Actinic keratosis |
-| BCC | Basal cell carcinoma |
-| SCC | Squamous cell carcinoma |
-| MEL | Melanoma |
-
-## Datasets
-
-Training and internal validation were performed on dermatoscopic images with clinical metadata. External validation was conducted on the independent PAD-UFES-20 dataset. Metadata categories include:
-
-Age groups (WHO classification):
-
-| Group | Range | Code |
-| --- | --- | --- |
-| Young | 44 and below | 0 |
-| Middle | 45 to 59 | 1 |
-| Elderly | 60 to 74 | 2 |
-| Senile | 75 and above | 3 |
-
-Sex encoding: Male = 0, Female = 1.
-
-Anatomical localization categories: anterior torso, head and neck, lateral torso, lower extremity, oral and genital area, palms and soles, posterior torso, upper extremity.
-
 ## Software Environment
 
 | Parameter | Value |
